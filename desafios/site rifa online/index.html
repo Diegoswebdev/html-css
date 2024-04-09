@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rifa Online</h1>
+    </header>
+    <main>
+        <section id="raffle-info">
+            <h2>Informações da Rifa</h2>
+            <p>Descrição da rifa: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Prêmio: Nome do prêmio</p>
+            <p>Número de bilhetes: 100</p>
+            <p>Número de bilhetes vendidos: 50</p>
+            <p>Preço por bilhete: R$ 10,00</p>
+        </section>
+        <section id="raffle-tickets">
+            <h2>Compre seu Bilhete</h2>
+            <form action="purchase.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Comprar Bilhete</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rifa Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
