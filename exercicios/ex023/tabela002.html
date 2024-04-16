@@ -15,6 +15,13 @@
         
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(153, 138, 138);
+            padding: 10px;
+        }
+
         td {
             border: 1px solid black;
             
@@ -26,9 +33,14 @@
         }
 
         thead{
-            background-color: gray;
+            background-color: rgb(49, 26, 26);
 
-            color: white;
+            color: rgb(255, 205, 205);
+        }
+
+        tbody > tr:nth-child(2n){ /*  2n, 2n-1 ou odd, even*/
+            background-color: rgb(111, 155, 155);
+        
         }
 
         th {
@@ -37,7 +49,7 @@
         }
 
         tfoot {
-            background-color: gray;
+            background-color: rgb(51, 30, 30);
             color: white;
         }
     </style>
@@ -56,12 +68,14 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades federativas</caption>
         <thead>
+            
             <tr>
-                <th>
+                <th scope="col">
                     Estado
                 </th>
-                <th>
+                <th scope="col" style="width: 60px;">
                     População
                 </th>
             </tr>
@@ -188,7 +202,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210 147 125</strong></td>
             </tr>
         </tfoot>
