@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
-/* Aparelh deitado (landscape) */
+/* Aparelh deitado (portrait) */
+
+
+body{
+    background: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+      
+
+}
